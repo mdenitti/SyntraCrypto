@@ -1,0 +1,36 @@
+<div class="card">
+  <h5 class="card-header">SyntraPXL Encrypt <span *ngIf="token"><br>Yay logged in with hash: {{token}}</span></h5>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="text">Text</label>
+      <input type="text" class="form-control" id="text" placeholder="wat wil je versleutelen?" [(ngModel)]="value">
+    </div>
+    <div class="form-group">
+      <label for="key">Sleutel</label>
+      <textarea class="form-control" id="key" rows="3" placeholder="geef je sleutel in"
+                [(ngModel)]="key"></textarea>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="textEncrypt">Encryptie resultaat</label>
+      <textarea class="form-control" id="textEncrypt" readonly rows="3">{{textEncrypt}}</textarea>
+    </div>
+
+    <div class="form-group mt-3">
+      <label for="text">MD5 HASH</label>
+      <input type="text" class="form-control" value="{{md5Hash}}">
+    </div>
+
+    <div class="form-group">
+      <label for="text">SHA512 HASH</label>
+      <input type="text" class="form-control" value="{{shaHash}}">
+    </div>
+
+  </div>
+  <div class="card-footer text-muted">
+    <div class="row-cols-4">
+      <button type="button" class="btn btn-danger m-1" (click)="run()">Uitvoeren</button>
+      <button type="button" class="btn btn-danger m-1" (click)="clear()">Wissen</button>
+    </div>
+  </div>
+</div>
