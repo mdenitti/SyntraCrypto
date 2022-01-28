@@ -7,13 +7,15 @@ import {AppComponent} from './app.component';
 import {EncryptComponent} from './components/encrypt/encrypt.component';
 import {DecryptComponent} from './components/decrypt/decrypt.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EncryptComponent,
     DecryptComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
