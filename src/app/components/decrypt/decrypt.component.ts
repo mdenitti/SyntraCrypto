@@ -11,7 +11,7 @@ export class DecryptComponent implements OnInit {
   // Our data, value = to decrypt , key = our key - textDecrypt is our result (show in view)
   value: string;
   key: string;
-  textDecrypt: string;
+  textDecrypt: any;
   
   constructor() {
   }

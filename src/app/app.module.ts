@@ -6,12 +6,14 @@ import {FormsModule} from '@angular/forms';
 import {AppComponent} from './app.component';
 import {EncryptComponent} from './components/encrypt/encrypt.component';
 import {DecryptComponent} from './components/decrypt/decrypt.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EncryptComponent,
-    DecryptComponent
+    DecryptComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

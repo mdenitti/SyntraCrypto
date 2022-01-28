@@ -11,8 +11,8 @@ export class EncryptComponent implements OnInit {
   value: string;
   key: string;
   textEncrypt: string;
-  md5Hash : string;
-  shaHash : string;
+  md5Hash : any;
+  shaHash : any;
   // password is hardcoded, you should fetch it from the user database
   // Plan: create a real login system. Fetch API, check, authenticate and authorize
   // Create a service / fetch methods / evaluate password / fill localstorage / logout -> destroy localstorage
